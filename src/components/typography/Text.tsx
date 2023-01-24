@@ -1,9 +1,9 @@
-import { TypographyProps } from "@/lib/types";
+import { TypographyProps } from '@/lib/types';
 
 export default function Text(props: TypographyProps) {
-  return(
-    <p>
-
+  return (
+    <p className={`font-bold text-white ${props.className}`}>
+      {props.children}
     </p>
-  )
+  );
 }

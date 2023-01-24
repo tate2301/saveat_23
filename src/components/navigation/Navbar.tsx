@@ -1,5 +1,3 @@
 export default function Navbar() {
-  return(
-    <></>
-  )
+  return <div className='flex items-center justify-between'></div>;
 }
