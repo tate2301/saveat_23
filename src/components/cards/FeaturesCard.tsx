@@ -7,7 +7,7 @@ export default function FeaturesCard(props: {
   icon: ReactNode;
 }) {
   return (
-    <div className='flex items-center justify-center gap-2 rounded bg-slate-800 p-4'>
+    <div className='flex items-center  gap-2 rounded bg-slate-800 p-4'>
       <div className='rounded-full bg-slate-700 p-2 text-white'>
         {props.icon}
       </div>

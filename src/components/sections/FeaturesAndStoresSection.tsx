@@ -1,3 +1,5 @@
+import Balancer from 'react-wrap-balancer';
+
 import FeaturesCard from '@/components/cards/FeaturesCard';
 import StoreCircleCard from '@/components/cards/StoreCircleCard';
 import { ClockIcon, SearchIcon, ShoppingCartIcon } from '@/components/icons';
@@ -21,8 +23,10 @@ export default function FeaturesAndStoreSection() {
 
       <div className='col-span-1 flex flex-col gap-8'>
         <Text className='text-3xl font-medium text-white'>
-          Welcome to Saveat.co.uk, your one-stop destination for all the best
-          discount codes and vouchers.
+          <Balancer>
+            Welcome to Saveat.co.uk, your one-stop destination for all the best
+            discount codes and vouchers.
+          </Balancer>
         </Text>
         <div className='grid grid-cols-1 md:grid-cols-3'>
           <div className='col-span-1 col-start-1 md:col-span-2'>
@@ -33,7 +37,7 @@ export default function FeaturesAndStoreSection() {
           </div>
         </div>
         <div className='grid grid-cols-1 md:grid-cols-3'>
-          <div className='col-span-1 col-start-2 md:col-span-2'>
+          <div className='col-span-1 md:col-span-2 md:col-start-2'>
             <FeaturesCard
               title='Constantly checked and updated daily'
               icon={<ClockIcon />}
