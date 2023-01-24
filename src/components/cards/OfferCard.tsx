@@ -7,7 +7,7 @@ import Text from '@/components/typography/Text';
 
 export default function OfferCard(props: Offer) {
   return (
-    <div className='flex-noshrink relative min-h-[440px] w-full md:col-span-1 md:w-auto'>
+    <div className='flex-noshrink relative min-h-[440px] min-w-[320px] md:min-w-[280px] lg:col-span-1 lg:w-auto'>
       <Image src={props.picture_url} alt={props.title} fill />
       <div className='absolute bottom-0 left-0 w-full p-8'>
         <div className='flex flex-col gap-4 rounded-xl bg-slate-900 p-4 text-white'>

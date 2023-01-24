@@ -10,7 +10,11 @@ export default function StoreCard(props: Store) {
       </div>
       <div className='absolute inset-x-auto bottom-[-10px] left-[50%] translate-x-[-50%] shadow'>
         <div className='relative h-[60px] w-[60px] overflow-hidden rounded-full'>
-          <Image src={props.picture_url} alt={props.store_name} fill />
+          <Image
+            src={props.profile_pic_url ?? ''}
+            alt={props.store_name}
+            fill
+          />
         </div>
       </div>
     </div>

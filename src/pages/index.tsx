@@ -14,7 +14,7 @@ export default function HomePage() {
       <Head>
         <title></title>
       </Head>
-      <main className='container mx-auto flex max-w-7xl flex-col gap-24 md:py-12'>
+      <main className='container mx-auto flex max-w-7xl flex-col gap-16 px-4 py-12 md:gap-24'>
         <Navbar />
         <SearchModal />
         <FavoriteOffers />

@@ -19,6 +19,7 @@ export type Offer = {
 export type Store = {
   picture_url: string;
   store_name: string;
+  profile_pic_url?: string;
 };
 
 export type Review = {
