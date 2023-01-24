@@ -1,4 +1,4 @@
-import * as React from 'react';
+import Head from "next/head";
 
 export default function HomePage() {
   return (
@@ -6,7 +6,7 @@ export default function HomePage() {
       <Head>
         <title></title>
       </Head>
-      <main>
+      <main className="container mx-auto">
         
       </main>
     </>
