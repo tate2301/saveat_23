@@ -24,16 +24,8 @@ export default function HomePage() {
         >
           <FavoriteOffersSection />
         </Suspense>
-        <Suspense
-          fallback={<Text>Fetching our favorite stores. Please wait...</Text>}
-        >
-          <FeaturesAndStoreSection />
-        </Suspense>
-        <Suspense
-          fallback={<Text>Fetching trending stores. Please wait...</Text>}
-        >
-          <TrendingStoreSection />
-        </Suspense>
+        <FeaturesAndStoreSection />
+        <TrendingStoreSection />
         <Suspense fallback={<Text>Fetching our reviews. Please wait...</Text>}>
           <ReviewsSection />
         </Suspense>
