@@ -1,5 +1,3 @@
-export default function ReviewCard() {
-  return(
-    <></>
-  )
+export default function TagCard() {
+  return <></>;
 }

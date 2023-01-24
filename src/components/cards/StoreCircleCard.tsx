@@ -1,20 +1,16 @@
-import Heading from "@/components/typography/Heading";
-import Text from "@/components/typography/Text";
+import Image from 'next/image';
 
-type StoreCardProps = {
-  picture_url: string
-  store_name: string
-}
+import { Store } from '@/lib/types';
 
-export default function StoreCircleCard(props: StoreCardProps) {
-  return(
-    <div className="flex flex-col items-center gap-4">
-      <div className="w-[80px] h-[80px] rounded-full overflow-hidden">
-      
+import Text from '@/components/typography/Text';
+
+export default function StoreCircleCard(props: Store) {
+  return (
+    <div className='col-span-1 flex flex-col items-center gap-4'>
+      <div className='relative h-[80px] w-[80px] overflow-hidden rounded-full'>
+        <Image src={props.picture_url} alt={props.store_name} fill />
       </div>
-      <Text className="font-medium text-xl">
-        {props.store_name}
-      </Text>
+      <Text className='font-medium'>{props.store_name}</Text>
     </div>
-  )
+  );
 }
